@@ -1,0 +1,22 @@
+{
+  "name": "homework_26",
+  "version": "1.0.0",
+  "description": "Homework 26 in Hillel IT school. By Derevyanko Stepan.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stepan0202/derevyanko_hw26.git"
+  },
+  "author": "Derevyanko Stepan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stepan0202/derevyanko_hw26/issues"
+  },
+  "homepage": "https://github.com/Stepan0202/derevyanko_hw26#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}
