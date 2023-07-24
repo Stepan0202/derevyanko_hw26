@@ -4,13 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/nullStyle.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Lesson </title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Lesson 14. HW 26</title>
 </head>
 <body>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <div class="container pt-5">
+        <div class="row mb-2">
+            <button type="button" class="btn btn-primary col-4" data-bs-toggle="modal" data-bs-target="#myFirstModal">My first modal</button>
+            <button type="button" class="btn btn-secondary col-8" data-bs-toggle="modal" data-bs-target="#mySecondModal">My second modal</button>
+        </div>
+        <div class="row"><button type="button" class="btn btn-danger">ALERT!!!</button></div>
+    </div>
+    <div class="modal fade" id="myFirstModal" tabindex="-1" aria-labelledby="myFirstLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="myFirstLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              My first modal. Please buy something from me. You can click outside of it to close.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mySecondModal">To my second modal ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="mySecondModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="mySecondLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="mySecondLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              This is my second modal!!!
+              I will not close if you click outside. Don't even try to press escape key.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myFirstModal">< To my first modal</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
