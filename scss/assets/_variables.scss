@@ -1,4 +1,5 @@
-$white: #ffffff;
+//theme
+$white: #eafae6;
 
 $theme-colors: (
     "light":      #d0eafd,
@@ -13,4 +14,21 @@ $theme-colors: (
     "warning":    #e6cd24,
     "danger":     #f61712,
 );
+//modal animation
 $modal-fade-transform:  translate(-600px, -50px) rotate(-1000deg);
+
+//tooltip style
+$tooltip-font-size:                 20px;
+$tooltip-max-width:                 200px;
+$tooltip-color:                     $white;
+$tooltip-bg:                        #87b2d9;
+$tooltip-border-radius:             10px;
+$tooltip-opacity:                   .9;
+$tooltip-margin:                    0;
+
+$tooltip-arrow-width:               1.8rem;
+$tooltip-arrow-height:              1rem;
+$tooltip-arrow-color:   black;
+
+//input
+$input-bg:                              #fff;
