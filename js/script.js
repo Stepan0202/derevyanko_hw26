@@ -28,7 +28,9 @@ userBDForm.addEventListener('submit', e => {
     if(isWrightFormat){
         input.classList.remove('is-invalid');
         input.classList.add('is-valid');
-        userformattedField.innerHTML = moment(userBD).format('Do MMMM YYYY')
+        const data = userBD.split('.');
+        console.log(data);
+        userformattedField.innerHTML = moment(`${data[1]}.${data[0]}.${data[2]}`).format('Do MMMM YYYY')
     }
     else{
         input.classList.remove('is-valid');
